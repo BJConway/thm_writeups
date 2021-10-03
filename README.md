@@ -12,6 +12,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Anonymous](challenges/anonymous.md) | Medium |
 | [Bounty Hacker](challenges/bounty-hacker.md) | Easy |
 | [Hack Park](challenges/hackpark/hackpark.md) | Medium |
+| [Lockdown](challenges/lockdown.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
 | [Overpass](challenges/overpass.md) | Easy |
 | [Wgel](challenges/wgel.md) | Easy |
