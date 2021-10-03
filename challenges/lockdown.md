@@ -59,7 +59,7 @@ The majority of these directories are empty or unavailable, but checking the sou
 
 Google searching the `SystemSettings.php?f=update_settings` endpoint returns [exploit-db results](https://www.exploit-db.com/exploits/49604) that appear to confirm a file upload vulnerability in the application (normally we would have used these scripts but I was unable to get shells uploaded using them to connect back, even with authentication).
 
-## Admin panel - sqli
+## 2. Admin panel - sqli
 
 Returning to the admin panel at `/admin/login.php`, we monitor the failed login requests and notice that the failure response includes the query made by the server in processing the request :
 
