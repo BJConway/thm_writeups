@@ -192,8 +192,8 @@ It is worth considering the steps taken by the script in detail :
 
 1. Reads user input for a file / directory path and assigns the input to the $TARGET variable (`read -p ... TARGET`)
 2. Checks that the provided path exists (`-e`) and is readable by the current user (`-r`) : given that we can run the script as root, readability should not be a problem
-3. Calls `/usr/bin/clamscan` to scan the given path, copying any files identified by the scan to `/home/cyrus/quarantine` - the "$..." expansion oof the user provided TARGET variable prevents command injection, and the full path to the clamscan binary prevents a PATH hijack
-4. Changes the owner of the copied files to cyrus (`chown -R cyrus:cyrus`)- again, the full path used to call chown prevents a PATH hijack
+3. Calls `/usr/bin/clamscan` to scan the given path, copying any files identified by the scan to `/home/cyrus/quarantine` - the "$..." expansion of the user provided TARGET variable prevents command injection, and the full path to the clamscan binary prevents a PATH hijack
+4. Changes the owner of the copied files to cyrus (`chown -R cyrus:cyrus`) - again, the full path used to call chown prevents a PATH hijack
 
 The key finding here is that the script has root read and copy access to all files on the system, and will make any files "discovered" by clamscan available to the cyrus user -  if we can find a way to force clamscan to "discover" arbitrary files, we will have full read access to the system. So how does clamscan discover files? Like most AVs, it compares files to known signatures. [Stackoverflow tells us that clamab stores these known signatures](https://askubuntu.com/questions/114000/how-to-update-clamav-definitions-database) at `/var/lib/clamav`, where we find the rule used to discover the `testvirus` file stored in cyrus' home directory : 
 
