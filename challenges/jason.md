@@ -1,6 +1,6 @@
 # Try Hack Me - Jason
 
-**Categories:**  Security, nodejs, deserialisation, web
+**Categories:**  Security, nodejs, deserialisation, web  
 **Difficulty:**  Easy
 
 Commands used in this guide use the exported variable $IP (`export IP=10.10.232.30`) in place of the target machine's IP address.
