@@ -85,7 +85,7 @@ Understanding the vulnerability requires some prior knowledge of node and javasc
 
 Firstly, the "node-serialize" package allows for javascript objects to be [serialised](https://en.wikipedia.org/wiki/Serialization) - essentially, to be turned into strings for inclusion in databases, HTTP requests, etc. The package also provides a method "unserialize" which performs the reverse operation - transforming serialized strings into javascript objects. This and similar packages have mostly been replaced by the JSON.stringify and JSON.parse built-ins in modern javascript.
 
-Secondly, JavaScript includes [Immediately Invoked Function Expressions](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression)(IIFE) - these are just functions are executed at the same time as they are defined :
+Secondly, JavaScript includes [Immediately Invoked Function Expressions](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression)(IIFE) - these are just functions that are executed at the same time as they are defined :
 
 ```console
 ┌──(kali㉿kali)-[~]
@@ -109,13 +109,13 @@ Just like the article, we generate a node reverse shell using [nodejsshell](http
 eval(String.fromCharCode(10,118,97,114,32,110,101,116...snip...
 ```
 
-Now we might think that we can wrap this reverse shell in an IIFE and copy it to the web app's email field. This doesn't work, and the article explains why - the unserialize() method only executes IIFEs if it recognises them as functions serialized by node-serialize's "serialize()" method (keep up now). So at this point we could start a new node project, import node-serialize, pass our reverse shell through serialize, etc. etc., or we could just read the article and steal the "_$$ND_FUNC$$_" flag used by serialize() to indicate a function. After adding this flag to our IIFE'd reverse shell, our exploit script should look something like this :
+Now we might think that we can wrap this reverse shell in an IIFE and copy it to the web app's email field. This doesn't work, and the article explains why - the unserialize() method only executes IIFEs if it recognises them as functions serialized by node-serialize's "serialize()" method (keep up now). So at this point we could start a new node project, import node-serialize, pass our reverse shell through serialize, etc. etc., or we could just read the article and steal the "\_\$$ND\_FUNC\$$\_" flag used by serialize() to indicate a function. After adding this flag to our IIFE'd reverse shell, our exploit script should look something like this :
 
 ```js
 _$$ND_FUNC$$_function(){eval(String.fromCharCode(...snip...))}()
 ```
 
-If the application works as expected, we shouldn't have to encode this for inclusion in the cookie - we can just paste it as regular input into the email field and let the application encode it, set it as cookie, and send it back to the server with `window.location.reload`. We start a listener on the attack machine, submit the exploit through the email field, and the reverse shell successfully connects :
+If the application works as expected, we shouldn't have to encode this for inclusion in the cookie - we can just paste it as regular input into the email field and let the application encode it, set it as a cookie, and send it back to the server with `window.location.reload`. We start a listener on the attack machine, submit the exploit through the email field, and the reverse shell successfully connects :
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/jason]
