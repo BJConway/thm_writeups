@@ -17,5 +17,6 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Lockdown](challenges/lockdown.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
 | [Overpass](challenges/overpass.md) | Easy |
+| [Skynet](challenges/skynet.md) | Easy |
 | [Wgel](challenges/wgel.md) | Easy |
 | [Wonderland](challenges/wonderland.md) | Medium |
