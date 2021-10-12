@@ -11,6 +11,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Agent Sudo](challenges/agent-sudo.md) | Easy |
 | [Anonymous](challenges/anonymous.md) | Medium |
 | [Bounty Hacker](challenges/bounty-hacker.md) | Easy |
+| [Empline](challenges/empline/empline.md) | Medium |
 | [Hack Park](challenges/hackpark/hackpark.md) | Medium |
 | [Ignite](challenges/ignite.md) | Easy |
 | [Jason](challenges/jason.md) | Easy |
