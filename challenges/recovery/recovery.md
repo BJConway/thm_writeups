@@ -190,7 +190,7 @@ system(
 
 Remove this user with `userdel -f security`. Refresh the flag page for flag 4.
 
-# Flag 5 : reversing, decryption
+## Flag 5 : reversing, decryption
 
 After running the `fixutils` binary, Alex noticed that the pages hosted by their application had been defaced or encrypted :
 
