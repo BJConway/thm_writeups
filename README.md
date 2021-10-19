@@ -1,7 +1,5 @@
 # Try Hack Me CTF Writeups
 
- <img src="https://tryhackme-badges.s3.amazonaws.com/xpwQ3sCi.png" alt="TryHackMe">
-
 Beginner / intermediate level write-ups of [Try Hack Me](https://tryhackme.com/) CFT challenge machines.
 
 The write-ups spoil the steps required to root the machines without disclosing flags, credentials, etc.
