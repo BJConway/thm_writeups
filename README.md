@@ -15,6 +15,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Bounty Hacker](challenges/bounty-hacker.md) | Easy |
 | [Empline](challenges/empline/empline.md) | Medium |
 | [Hack Park](challenges/hackpark/hackpark.md) | Medium |
+| [IDE](challenges/ide/ide.md) | Easy |
 | [Ignite](challenges/ignite.md) | Easy |
 | [Jason](challenges/jason.md) | Easy |
 | [Lockdown](challenges/lockdown.md) | Medium |
