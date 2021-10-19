@@ -1,5 +1,7 @@
 # Try Hack Me CTF Writeups
 
+ <img src="https://tryhackme-badges.s3.amazonaws.com/xpwQ3sCi.png" alt="TryHackMe">
+
 Beginner / intermediate level write-ups of [Try Hack Me](https://tryhackme.com/) CFT challenge machines.
 
 The write-ups spoil the steps required to root the machines without disclosing flags, credentials, etc.
@@ -18,6 +20,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Lockdown](challenges/lockdown.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
 | [Overpass](challenges/overpass.md) | Easy |
+| [Recovery](challenges/recovery/recovery.md) | Medium |
 | [Skynet](challenges/skynet.md) | Easy |
 | [Wgel](challenges/wgel.md) | Easy |
 | [Wonderland](challenges/wonderland.md) | Medium |
