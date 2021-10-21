@@ -15,6 +15,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Hack Park](challenges/hackpark/hackpark.md) | Medium |
 | [IDE](challenges/ide/ide.md) | Easy |
 | [Ignite](challenges/ignite.md) | Easy |
+| [Inferno](challenges/inferno/inferno.md) | Medium |
 | [Jason](challenges/jason.md) | Easy |
 | [Lockdown](challenges/lockdown.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
