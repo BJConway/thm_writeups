@@ -1,4 +1,4 @@
-# Try Hack Me - IDE
+# Try Hack Me - Inferno
 
 **Categories:** Security, Inferno, Vulnhub, OSCP  
 **Difficulty:** Medium  
