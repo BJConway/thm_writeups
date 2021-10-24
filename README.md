@@ -24,3 +24,4 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Skynet](challenges/skynet.md) | Easy |
 | [Wgel](challenges/wgel.md) | Easy |
 | [Wonderland](challenges/wonderland.md) | Medium |
+| [Zeno](challenges/zeno/zeno.md) | Medium |
