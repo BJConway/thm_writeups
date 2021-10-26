@@ -111,7 +111,7 @@ async function login() {
     }
 } 
 ```
-The function extracts the values from the input elements, POSTs them to `/api/login`, and handles the response : if the response is the string 'Incorrect credentials', the login fails, else a cookie `SessionToken` is set with the response content. Having already seen the group's approach to encryption, we might want to gamble here that the server only checks for the existence of the `SessionToken` cookie rather than it's value. To test this, we can curl the `/admin/` route using `--cookie` to set the `SessionToken` cookie to an arbitrary value :
+The function extracts the values from the input elements, POSTs them to `/api/login`, and handles the response : if the response is the string 'Incorrect credentials', the login fails, else a cookie `SessionToken` is set with the response content. Having already seen the group's approach to encryption, we might want to gamble here that the server only checks for the existence of the `SessionToken` cookie rather than its value. To test this, we can curl the `/admin/` route using `--cookie` to set the `SessionToken` cookie to an arbitrary value :
 
 ```console
 ┌──(kali㉿kali)-[~]
