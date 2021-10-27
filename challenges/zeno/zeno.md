@@ -7,7 +7,7 @@ Commands used in this guide use the exported variable $IP (`export IP=10.10.4.12
 
 ## 1: Enumeration - rustscan, nmap, gobuster
 
-Having launched the box, we run rustscan following by an nmap version scan of the discovered ports (22, 12340) : 
+Having launched the box, we run rustscan followed by an nmap version scan of the discovered ports (22, 12340) : 
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/zeno]
@@ -34,7 +34,7 @@ A Google search for "Restaurant Management System PHP vulnerabilities" reveals a
 
 ## 2. Dead end - persistent XSS, user sign up
 
-After reading the outline of the arbitrary file upload vulnerability discovered above, I had assumed that the RCE vulnerability required authentication - this was wrong, but it meant that I started by looking at the XSS vulnerability. The application allows users to create an account (`/rms/login-register.phg`) using their first name, last name and email address. After creating an account the new user receives a message from the administrator in the inbox section of the site (`/rms/inbox.php`) : 
+After reading the outline of the arbitrary file upload vulnerability discovered above, I had assumed that the RCE vulnerability required authentication - this was wrong, but it meant that I started by looking at the XSS vulnerability. The application allows users to create an account (`/rms/login-register.php`) using their first name, last name and email address. After creating an account the new user receives a message from the administrator in the inbox section of the site (`/rms/inbox.php`) : 
 
 ```html
 <CAPTION><h2>INBOX</h2></CAPTION>
