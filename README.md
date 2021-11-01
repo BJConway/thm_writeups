@@ -17,6 +17,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Ignite](challenges/ignite.md) | Easy |
 | [Inferno](challenges/inferno/inferno.md) | Medium |
 | [Jason](challenges/jason.md) | Easy |
+| [JPGChat](challenges/jpgchat.md) | Easy |
 | [Lockdown](challenges/lockdown.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
 | [Overpass](challenges/overpass.md) | Easy |
