@@ -121,7 +121,7 @@ Having discovered the injectable field, the request can be passed to sqlmap to d
 
 ## 6. Foothold - command injection, RCE
 
-None of the previous steps (credentials, injectable fields, 2nd flag, etc.) are required to get a foothold on the box. When attempting to access the `/echo.php` route in the browser without authentication causes a 302 redirect to `/login.html`, but given that curl does not automatically follow redirects, we can easily interact with the page without the previously discovered credentials. Curling `/echo.php` we find an interface to "echo" text to the page, with user input being is sent back to the `/echo.php` page as a "?search" query param : 
+None of the previous steps (credentials, injectable fields, 2nd flag, etc.) are required to get a foothold on the box. When attempting to access the `/echo.php` route in the browser without authentication causes a 302 redirect to `/login.html`, but given that curl does not automatically follow redirects, we can easily interact with the page without the previously discovered credentials. Curling `/echo.php` we find an interface to "echo" text to the page, with user input being sent back to the `/echo.php` page as a "?search" query param : 
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/minotaur]
