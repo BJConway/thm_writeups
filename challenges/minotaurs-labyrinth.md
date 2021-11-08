@@ -95,7 +95,7 @@ The same credentials are also available at a second location discovered by gobus
 
 ## 5. "User Pannel" - sqli, credential disclosure, sqlmap
 
-As we saw in section 2, the "User Pannel" page provides some kind of interface for querying the application database. Using the search team "'" causes a 500 error, indicating that the field is injectable (we add a cookie taken from the browser to the curl request because the `/api/` endpoint requires authentication) : 
+As we saw in section 2, the "User Pannel" page provides some kind of interface for querying the application database. Using the search term `'` causes a 500 error, indicating that the field is injectable (we add a cookie taken from the browser to the curl request because the `/api/` endpoint requires authentication) : 
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/minotaur]
