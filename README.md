@@ -19,6 +19,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Jason](challenges/jason.md) | Easy |
 | [JPGChat](challenges/jpgchat.md) | Easy |
 | [Lockdown](challenges/lockdown.md) | Medium |
+| [Minotaur's Labyrinth](challenges/minotaurs-labyrinth.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
 | [Overpass](challenges/overpass.md) | Easy |
 | [Recovery](challenges/recovery/recovery.md) | Medium |
