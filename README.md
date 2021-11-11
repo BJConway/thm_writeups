@@ -12,6 +12,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Anonymous](challenges/anonymous.md) | Medium |
 | [Bounty Hacker](challenges/bounty-hacker.md) | Easy |
 | [Empline](challenges/empline/empline.md) | Medium |
+| [Frank and Herby Make an App](challenges/frank-herby.md) | Medium |
 | [Hack Park](challenges/hackpark/hackpark.md) | Medium |
 | [IDE](challenges/ide/ide.md) | Easy |
 | [Ignite](challenges/ignite.md) | Easy |
