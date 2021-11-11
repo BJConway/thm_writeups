@@ -25,7 +25,7 @@ PORT      STATE SERVICE  VERSION
 
 Nmap isn't massively helpful here - it does find the OpenSSH version (no relevant vulnerabilities) and the nginx instance and version (no relevant vulnerabilities) on 31337. It also confirms that services are running on 10250 and 10255, ports used by [Kubernete's Kubelet, the Kubernetes component responsible for provisioning and managing containers on the node](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/). 
 
-We can further investigate the state of the Kubernete's cluster on the target with [Kube-hunter, a Kubernetes enumeration tool](https://github.com/aquasecurity/kube-hunter) - Kube-hunter basically queries the previously discovered API services at 10250 and 10255 to provide additional information on the cluster's configuration and potential vulnerabilities : 
+We can further investigate the state of the Kubernete's cluster on the target with [Kube-hunter, a Kubernetes enumeration tool](https://github.com/aquasecurity/kube-hunter). Kube-hunter basically queries the previously discovered API services at 10250 and 10255 to provide additional information on the cluster's configuration and potential vulnerabilities : 
 
 ```console
 ┌──(kali㉿kali)-[~/Documents/tthm/frank-herby]
@@ -89,7 +89,7 @@ The user flag is at `/home/frank/user.txt`.
 
 ## 3: Privesc version 1, frank -> root - CVE-2019-15789
 
-I found 2 similar but distinct ways to privesc from frank to root, both of which exploit frank's membership of the microk8s group and both of which will go presented here. Given the breadth of the permissions available to members of the microk8s group (and the complexity of safe k8s configs...) it is likely that there are other methods.
+I found 2 similar but distinct ways to privesc from frank to root, both of which exploit frank's membership of the microk8s group and both of which will be presented here. Given the breadth of the permissions available to members of the microk8s group (and the complexity of safe k8s configs...) it is likely that there are other methods.
 
 
 A google search for "microk8s privelege escalation" throws up [CVE-2019-15789](https://nvd.nist.gov/vuln/detail/CVE-2019-15789), allowing low-privilege users to privesc on the host by provisioning a new container that mounts the host's file system. Whilst this has been fixed for low-privilege users, it is still possible to perform this "exploit" as a member of the microk8s group (this is not really an exploit, as members of the microk8s group are expected to perform high-privilege actions on the cluster). The same search also finds an exploit POC that includes a basic pod definition .yaml file that mounts the host's root at `/opt/root` ([credit to Denis Andzakovic at Pulse Security](https://pulsesecurity.co.nz/advisories/microk8s-privilege-escalation)) :
@@ -125,7 +125,7 @@ NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-7b548976fd-77v4r   1/1     Running   2          11d
 ```
 
-So we've find a running pod, but this doesn't give us the image definition used to build its containers - this requires another kubectl command to output the pod's configuraiton in yaml, revealing an image available at a local registry running on localhost:32000 :
+So we've found a running pod, but this doesn't give us the image definition used to build its containers - this requires another kubectl command to output the pod's configuration in yaml, revealing an image available at a local registry running on localhost:32000 :
 
 ```console
 frank@dev-01:~$ microk8s kubectl get pod nginx-deployment-7b548976fd-77v4r -o yaml
