@@ -9,9 +9,9 @@ At the time of writing the machine had some issues with stability. Be sure to wa
 
 I know just enough k8s and kubectl to be dangerous (a bit like Frank and Herby...). Please get in touch to correct any k8s nonsense you may find in this walkthrough.
 
-## 1: Enumeration - rustscan, nmap, kube_hunter
+## 1: Enumeration - rustscan, nmap, kube-hunter
 
-Effective enumeration of the box is difficult due to its instability, but the room's tasks makes this easier by providing some information on what we're looking for. Your rustscan results will vary minute by minute, but eventually you should find around 8-9 open ports (most importantly, 22, 10255), allowing for an nmap service version scan on the discovered ports : 
+Effective enumeration of the box is difficult due to its instability, but the room's tasks makes this easier by providing some information on what we're looking for. Your rustscan results will vary minute by minute, but eventually you should find around 8-9 open ports (most importantly, 22, 10255 and 31337), allowing for an nmap service version scan on the discovered ports : 
 
 ```console
 PORT      STATE SERVICE  VERSION
