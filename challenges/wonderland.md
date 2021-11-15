@@ -172,7 +172,7 @@ system("/bin/echo -n 'Probably by ' && date --date='next hour' -R"Probably by We
 ...snip..
 ```
 
-The first two lines sets the UID and GID to the hatter user (you can double check this against the entries in `/etc/passwd`), and the following lines confirm that the teaParty binary is using date. More importantly, we see that the binary that it does not provide a full path to date. In these cases, the system relies on the PATH variable to resolve the location of the named binary (sounding familiar?). To exploit this reliance on the PATH variable, we first create a bash shell script named `date` in rabbit's home directory :
+The first two lines sets the UID and GID to the hatter user (you can double check this against the entries in `/etc/passwd`), and the following lines confirm that the teaParty binary is using date. More importantly, we see that the binary does not provide a full path to date. In these cases, the system relies on the PATH variable to resolve the location of the named binary (sounding familiar?). To exploit this reliance on the PATH variable, we first create a bash shell script named `date` in rabbit's home directory :
 
 ```console
 rabbit@wonderland:/home/rabbit$ cat date
