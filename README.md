@@ -25,6 +25,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Overpass](challenges/overpass.md) | Easy |
 | [Recovery](challenges/recovery/recovery.md) | Medium |
 | [Skynet](challenges/skynet.md) | Easy |
+| [Squid Game](challenges/squid-game/squid-game.md) | Hard |
 | [Team](challenges/team.md) | Easy |
 | [Wgel](challenges/wgel.md) | Easy |
 | [Wonderland](challenges/wonderland.md) | Medium |
