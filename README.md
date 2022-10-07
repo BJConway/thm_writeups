@@ -10,7 +10,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | ------------ | ---------- |
 | [Agent Sudo](challenges/agent-sudo.md) | Easy |
 | [Anonymous](challenges/anonymous.md) | Medium |
-| [Bounty Hacker](challenges/blue.md) | Easy |
+| [Blue](challenges/blue.md) | Easy |
 | [Bounty Hacker](challenges/bounty-hacker.md) | Easy |
 | [Empline](challenges/empline/empline.md) | Medium |
 | [Frank and Herby Make an App](challenges/frank-herby.md) | Medium |
