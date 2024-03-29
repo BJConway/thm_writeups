@@ -20,6 +20,7 @@ Comments, corrections, improvements are welcome - get in touch.
 | [Inferno](challenges/inferno/inferno.md) | Medium |
 | [Jason](challenges/jason.md) | Easy |
 | [JPGChat](challenges/jpgchat.md) | Easy |
+| [Kitty](challenges/kitty.md) | Medium |
 | [Lockdown](challenges/lockdown.md) | Medium |
 | [Minotaur's Labyrinth](challenges/minotaurs-labyrinth.md) | Medium |
 | [Mr. Robot](challenges/mr-robot.md) | Medium |
